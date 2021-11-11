@@ -15,7 +15,7 @@ jobs:
       - uses: convictional/trigger-workflow-and-wait@v1.3.0
         with:
           owner: ajaychinthapalli
-          repo: github-training-web-api
+          repo: assr-eng/github-training-web-api
           github_token: ${{ secrets.G_ACCESS_TOKEN }}
           workflow_file_name: deploy.yml
       - name: Deploy Web App
