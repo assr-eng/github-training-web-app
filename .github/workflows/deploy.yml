@@ -14,8 +14,9 @@ jobs:
           sleep 10s
       - uses: convictional/trigger-workflow-and-wait@v1.5.0
         with:
-          owner: ajaychinthapalli
+          owner: keithconvictional
           repo: github-training-web-api
+          github_token: ${{ secrets.G_ACCESS_TOKEN }}
           workflow_file_name: deploy.yml
       - name: Deploy Web App
         run: |
